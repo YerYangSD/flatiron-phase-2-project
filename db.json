@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": [
+    {
+        "id": 1,
+        "username": "Yer123",
+        "email": "yer123@gmail.com",
+        "name": "Yer Yang",
+        "wallet": 100
+    },
+    {
+        "id": 2,
+        "username": "John456",
+        "email": "john456@gmail.com",
+        "name": "Ben Franklin",
+        "wallet": 100
+    }
+]
+}

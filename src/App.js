@@ -7,11 +7,20 @@ import SignUp from "./SignUp"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-
-    </div>
+    <div className='App'>
+      <NavBar />
+      <Switch>
+        <Route path="/SignUp">
+          <SignUp />
+        </Route>
+        <Route path="/User">
+          <User />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </div >
   );
 }
 

@@ -26,25 +26,14 @@ function NavBar() {
             </NavLink>
 
             <NavLink
-                to="/User"
+                to="Game"
                 exact
                 style={linkStyles}
                 activeStyle={{
                     background: "lightblue",
                 }}
             >
-                User
-            </NavLink>
-
-            <NavLink
-                to="SignUp"
-                exact
-                style={linkStyles}
-                activeStyle={{
-                    background: "lightblue",
-                }}
-            >
-                SignUp
+                Game
             </NavLink>
         </div>
     );

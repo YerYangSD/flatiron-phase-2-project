@@ -1,20 +1,18 @@
+// import React and React components
 import React from 'react';
 import { Switch, Route } from 'react-router-dom/cjs/react-router-dom.min';
-import NavBar from "./NavBar"
-import Home from "./Home"
-import User from "./User"
-import SignUp from "./SignUp"
+import NavBar from "../navbar/NavBar"
+import Home from "../home/Home"
+import Game from '../game/Game';
 
+// Use <Route> components to define client-side routes in my app
 function App() {
   return (
     <div className='App'>
       <NavBar />
       <Switch>
-        <Route path="/SignUp">
-          <SignUp />
-        </Route>
-        <Route path="/User">
-          <User />
+        <Route path="/Game">
+          <Game />
         </Route>
         <Route exact path="/">
           <Home />

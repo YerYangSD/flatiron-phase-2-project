@@ -1,27 +1,26 @@
 import React, { useState, useEffect } from 'react'
 import { v4 as uuid } from "uuid"
 
-function Game({ emojis }) {
+function Game({ emojis, spinReels, activeEmojis, setIsSpinning, isSpinning }) {
     const [reels, setReels] = useState([])
-    const [isSpinning, setIsSpinning] = useState(false)
+
     // console.log("emojis:", emojis)
-    const emojiArray = emojis
     // console.log("emojiArray:", emojiArray)
     useEffect(() => {
         if (isSpinning) {
             const spinInterval = setInterval(() => {
-                const newReels = emojiArray.map(() => {
-                    const randomIndex = Math.floor(Math.random() * emojiArray.length)
-                    return emojiArray[randomIndex]
+                const newReels = activeEmojis.map(() => {
+                    const randomIndex = Math.floor(Math.random() * activeEmojis.length)
+                    return activeEmojis[randomIndex]
                 })
                 console.log("newReels:", newReels)
                 setReels(newReels)
-            }, 1000);
+            }, 50);
 
             setTimeout(() => {
                 clearInterval(spinInterval)
                 setIsSpinning(false)
-            }, 1000);
+            }, 2000);
 
             return function cleanUp() {
                 clearInterval(spinInterval)
@@ -29,16 +28,11 @@ function Game({ emojis }) {
         };
     }, [isSpinning, reels])
 
-    function spinReels() {
-        if (!isSpinning) {
-            setIsSpinning(true)
-        }
-    };
-
     function renderSlot() {
+        console.log("activeEmojis:", activeEmojis)
         console.log("reels:", reels)
         if (reels.length === 0) {
-            return emojis.map((emoji) => (
+            return activeEmojis.map((emoji) => (
                 <div key={uuid()} className="reel">
                     {emoji.emoji}
                 </div>

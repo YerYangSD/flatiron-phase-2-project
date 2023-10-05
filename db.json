@@ -1,5 +1,5 @@
 {
-  "halloweenEmojis": [
+  "emojis": [
     {
       "id": 1,
       "name": "ghost",
@@ -27,6 +27,36 @@
     },
     {
       "id": 6,
+      "name": "skull",
+      "emoji": "💀"
+    },
+    {
+      "id": 7,
+      "name": "kangaroo",
+      "emoji": "🦘"
+    },
+    {
+      "id": 8,
+      "name": "panda",
+      "emoji": "🐼"
+    },
+    {
+      "id": 9,
+      "name": "candy",
+      "emoji": "🍬"
+    },
+    {
+      "id": 10,
+      "name": "jack-o-lantern",
+      "emoji": "🎃"
+    },
+    {
+      "id": 11,
+      "name": "vampire",
+      "emoji": "🧛"
+    },
+    {
+      "id": 12,
       "name": "skull",
       "emoji": "💀"
     }

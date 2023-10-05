@@ -17,21 +17,28 @@ function App() {
       .then(emojiData => {
 
         setEmojis(emojiData)
-        spinReels()
       })
   }, [])
 
-  function spinReels() {
-    const activeEmojis = []
+  function getThreeEmojis() {
+    const threeEmojis = []
     for (let index = 0; index < 3; index++) {
       const randomIndex = Math.floor(Math.random() * emojis.length)
-      activeEmojis.push(emojis[randomIndex])
+      threeEmojis.push(emojis[randomIndex])
     }
+    return threeEmojis
+  }
+
+  function spinReels() {
     if (!isSpinning) {
       setIsSpinning(true)
-      setActiveEmojis(activeEmojis)
+      setActiveEmojis(getThreeEmojis())
     }
   };
+
+  useEffect(() => {
+    setActiveEmojis(getThreeEmojis())
+  }, [emojis])
 
   console.log(emojis)
   return (

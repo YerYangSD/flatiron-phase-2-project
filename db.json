@@ -42,23 +42,83 @@
     },
     {
       "id": 9,
-      "name": "candy",
-      "emoji": "🍬"
+      "name": "giraffe",
+      "emoji": "🦒"
     },
     {
       "id": 10,
-      "name": "jack-o-lantern",
-      "emoji": "🎃"
+      "name": "elephant",
+      "emoji": "🐘"
     },
     {
       "id": 11,
-      "name": "vampire",
-      "emoji": "🧛"
+      "name": "zebra",
+      "emoji": "🦓"
     },
     {
       "id": 12,
-      "name": "skull",
-      "emoji": "💀"
+      "name": "rhinoceros",
+      "emoji": "🦏"
+    },
+    {
+      "id": 13,
+      "name": "pineapple",
+      "emoji": "🍍"
+    },
+    {
+      "id": 14,
+      "name": "banana",
+      "emoji": "🍌"
+    },
+    {
+      "id": 15,
+      "name": "watermelon",
+      "emoji": "🍉"
+    },
+    {
+      "id": 16,
+      "name": "grapes",
+      "emoji": "🍇"
+    },
+    {
+      "id": 17,
+      "name": "cherries",
+      "emoji": "🍒"
+    },
+    {
+      "id": 18,
+      "name": "strawberry",
+      "emoji": "🍓"
+    },
+    {
+      "id": 19,
+      "name": "ice cream",
+      "emoji": "🍨"
+    },
+    {
+      "id": 20,
+      "name": "doughnut",
+      "emoji": "🍩"
+    },
+    {
+      "id": 21,
+      "name": "watermelon",
+      "emoji": "🍉"
+    },
+    {
+      "id": 22,
+      "name": "grapes",
+      "emoji": "🍇"
+    },
+    {
+      "id": 23,
+      "name": "cherries",
+      "emoji": "🍒"
+    },
+    {
+      "id": 24,
+      "name": "strawberry",
+      "emoji": "🍓"
     }
   ]
 }

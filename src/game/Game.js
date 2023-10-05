@@ -31,17 +31,18 @@ function Game({ emojis, spinReels, activeEmojis, setIsSpinning, isSpinning }) {
     function renderSlot() {
         console.log("activeEmojis:", activeEmojis)
         console.log("reels:", reels)
-        if (reels.length === 0) {
-            return activeEmojis.map((emoji) => (
-                <div key={uuid()} className="reel">
-                    {emoji.emoji}
+        if (activeEmojis[0] !== undefined && reels.length === 0) {
+            return activeEmojis.map((emojiObj) => (
+                <div key={emojiObj.id} className="reel">
+                    {emojiObj.emoji}
                 </div>
             ))
 
-        } else {
-            return reels.map((emoji) => (
+        }
+        else {
+            return reels.map((emojiObj) => (
                 <div key={uuid()} className="reel">
-                    {emoji.emoji}
+                    {emojiObj.emoji}
                 </div>
             ))
 

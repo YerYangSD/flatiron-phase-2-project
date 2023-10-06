@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom/cjs/react-router-dom.min';
 import NavBar from "../navbar/NavBar"
 import Home from "../home/Home"
 import Game from '../game/Game';
+import PostFeature from '../postfeature/PostFeature';
 
 // Use <Route> components to define client-side routes in my app
 function App() {
@@ -46,7 +47,15 @@ function App() {
       <NavBar />
       <Switch>
         <Route path="/Game">
-          <Game emojis={emojis} spinReels={spinReels} activeEmojis={activeEmojis} isSpinning={isSpinning} setIsSpinning={setIsSpinning} />
+          <Game
+            emojis={emojis}
+            spinReels={spinReels}
+            activeEmojis={activeEmojis}
+            isSpinning={isSpinning}
+            setIsSpinning={setIsSpinning} />
+        </Route>
+        <Route path="/PostFeature">
+          <PostFeature />
         </Route>
         <Route exact path="/">
           <Home />

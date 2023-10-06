@@ -35,6 +35,17 @@ function NavBar() {
             >
                 Game
             </NavLink>
+
+            <NavLink
+                to="PostFeature"
+                exact
+                style={linkStyles}
+                activeStyle={{
+                    background: "lightblue",
+                }}
+            >
+                Add Emojis
+            </NavLink>
         </div>
     );
 }

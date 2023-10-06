@@ -21,6 +21,10 @@ function App() {
       })
   }, [])
 
+  function addSixEmojis(newEmojis) {
+    setEmojis([...emojis, newEmojis])
+  }
+
   function getThreeEmojis() {
     const threeEmojis = []
     for (let index = 0; index < 3; index++) {
@@ -55,7 +59,7 @@ function App() {
             setIsSpinning={setIsSpinning} />
         </Route>
         <Route path="/PostFeature">
-          <PostFeature />
+          <PostFeature onAddSixEmojis={addSixEmojis} />
         </Route>
         <Route exact path="/">
           <Home />

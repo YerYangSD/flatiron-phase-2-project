@@ -102,23 +102,23 @@
     },
     {
       "id": 21,
-      "name": "watermelon",
-      "emoji": "🍉"
+      "name": "custard",
+      "emoji": "🍮"
     },
     {
       "id": 22,
-      "name": "grapes",
-      "emoji": "🍇"
+      "name": "shortcake",
+      "emoji": "🍰"
     },
     {
       "id": 23,
-      "name": "cherries",
-      "emoji": "🍒"
+      "name": "cookie",
+      "emoji": "🍪"
     },
     {
       "id": 24,
-      "name": "strawberry",
-      "emoji": "🍓"
+      "name": "shaved ice",
+      "emoji": "🍧"
     }
   ]
 }

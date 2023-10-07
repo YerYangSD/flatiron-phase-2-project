@@ -1,34 +1,15 @@
-# Requirements
+# Flatiron-Phase-2-Project
 
-1. [x] You must make a single page application (only one index.html file) using `create-react-app`.
-2. [x] Your app should use `at least 3 components` in a way that keeps your code well organized.
-3. [x] There should be `at least 2 client-side routes` using React RouterLinks to an external site.. Be sure to include a nav bar or other UI element that allows users to navigate between routes.
-4. [ ] Use a json-server to create a RESTful API for your backend and `make both a  request toGET and a POST the json server`. Use a form to make your post request, `specifically a controlled form/component`. Additionally, you may choose to incorporate data from an external API but it is not required.
+## How Does this Application Work?
 
-   - You should keep your json-server data simple: avoid nested data and associations. You'll learn how to work with more complex data in the next two phases. Focus on the frontend for this project.
-   - Upon return of json from your POST request, a state update by a setState function is required!
+This is a simple application I have created called "Slotmoji." This application allows users to play a slot machine game but with a twist. The twist is that user can experience the excitement of traditional slot games while expressing their own personality through emojis. Users can incorporate their favorite emojis into the spinning reels, making every spin a unique and entertaining experience. Users can watch as their chosen emojis become part of the reels and potentially align to create winning combinations. This application contains a "Home" page that gives a brief description of the application and a "Game" page where users can play the slot machine. In addition, there is an "Add Emoji" page that allows the user to add emojis to the spinning reels. Directions on how to add emojis to the spinning reels are included on the same page.
 
-# Project Pitch
+## Installation
 
-### Main idea:
+Since this webpage has not been deploy to the public, it cannot be accessed like others, such as _google.com_ or _facebook.com_. It has to be **forked** from **GitHub** and **cloned** to a local computer first. Once it has been cloned locally, navigate to the file and open it in an Integrated Development Environment (IDE) such as Visual Studio Code. Then, type the command `npm install` in your terminal to install packages and dependencies for the project. Since this application fetches data from `http://localhost:4000/emojis`(local server), run the command line `npm run server` in the terminal to excute json-server tool, allowing it to watch the json file for changes. Then, run the command line `npm start` in the terminal to open the document in a defualt browser. From there, the application can be accessed.
 
-This application will allow users to play a simple slot machine game.
+## Resources
 
-### User story:
+All emojis used in the creation of the JSON data for this application are sourced from [emojipedia.org](https://emojipedia.org/).
 
-Users must sign up first before they can play the game. Users will start out with $100 in their wallet and can play $10 per game. Users can insert $100 money into the machine once they ran out of money.
-
-### How will I use the concepts I recently learned to meet the project requirements?
-
-I will use components to separate out my functions. I will need to use useState in my components.
-
-### What area do I think will be most challenging?
-
-I think trying to get the items to move in the machine and making it stop randomly will be a challenge.
-
-# Stretch Goals
-
-1. Use more components and client-side routes.
-2. Add some styling: you're encouraged to write your CSS from scratch, either by using styled componentsLinks to an external site. or writing CSS files and using id/className to style your elements. You can also incorporate a UI framework (like React BootstrapLinks to an external site., Semantic UILinks to an external site., or Material UILinks to an external site.) if you prefer.
-3. Incorporate data from an external API. Check out this list of APIsLinks to an external site. if you need some inspiration!
-4. Anything else you'd like! These are only the basic requirements — you're free to explore and add on as much stuff as you'd like.
+Credit to the team behind Emojipedia for creating and maintaining the site and providing a valuable resource for emoji enthusiasts.

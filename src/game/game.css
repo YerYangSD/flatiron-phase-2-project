@@ -1,0 +1,25 @@
+
+.reels{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 25vh;
+}
+
+.reel {
+border: 2px solid goldenrod;
+margin: 5px;
+font-size: 50px;
+}
+
+#slot-machine{
+    border: 2px solid goldenrod;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#slot-machine-container{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}

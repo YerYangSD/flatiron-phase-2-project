@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { v4 as uuid } from "uuid"
 import "./game.css"
 
-function Game({ emojis, spinReels, activeEmojis, setIsSpinning, isSpinning }) {
+function Game({ spinReels, activeEmojis, setIsSpinning, isSpinning }) {
     const [reels, setReels] = useState([])
 
     // console.log("emojis:", emojis)

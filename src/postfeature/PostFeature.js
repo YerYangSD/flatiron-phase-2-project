@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "./postFeature.css"
 
 function PostFeature({ onAddSixEmojis }) {
     const [formData, setFormData] = useState({

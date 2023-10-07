@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./postFeature.css"
 
-function PostFeature({ onAddSixEmojis }) {
+function PostFeature({ onAddEmoji }) {
     const [formData, setFormData] = useState({
         emoji: "",
         name: ""
@@ -18,9 +18,8 @@ function PostFeature({ onAddSixEmojis }) {
         }
         fetch(" http://localhost:4000/emojis", configObj)
             .then(resp => resp.json())
-            .then(sixNewEmojis => {
-                console.log(sixNewEmojis)
-                onAddSixEmojis(sixNewEmojis)
+            .then(newEmojis => {
+                onAddEmoji(newEmojis)
             })
     }
     function handleChange(event) {

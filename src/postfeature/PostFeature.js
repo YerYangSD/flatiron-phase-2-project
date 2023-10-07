@@ -34,6 +34,8 @@ function PostFeature({ onAddEmoji }) {
         <div>
             <form id="add-emoji-form" onSubmit={handleSubmit}>
                 <h1>Add Your Own Emojis to the Slot Machine</h1>
+                <p>Copy and paste an emoji and give it a name. After clicking the add button, go back to the slot machine and click spin. May required spinning multiple times to see the newly added emoji. <a href="https://emojipedia.org/" target="blank">Emojipedia</a> is a link you can use to copy and add emojis to the slot machine.</p>
+                <p>Note: Do not include URL image or text in the emoji input when adding.</p>
                     <label htmlFor="emoji">Emoji:</label>
                 <input type="text" id="emoji" value={formData.emoji} onChange={handleChange} required />
                     <label htmlFor="name">Name:</label>

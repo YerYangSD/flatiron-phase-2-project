@@ -45,7 +45,7 @@ function Game({ spinReels, activeEmojis, setIsSpinning, isSpinning }) {
 
     return (
         <div id="slot-machine-container">
-            <h1 id="title">Slot Machine</h1>
+            <h1 id="title">🤪🤣😂 Slot Machine 😃😁😅</h1>
             <div id="slot-machine">
                 <div className="reels">
                     {renderSlot()}

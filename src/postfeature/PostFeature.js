@@ -34,9 +34,9 @@ function PostFeature({ onAddEmoji }) {
         <div>
             <form id="add-emoji-form" onSubmit={handleSubmit}>
                 <h1>Add Your Own Emojis to the Slot Machine</h1>
-                <label htmlFor="emoji">Emoji 1</label>
+                    <label htmlFor="emoji">Emoji:</label>
                 <input type="text" id="emoji" value={formData.emoji} onChange={handleChange} required />
-                <label htmlFor="name">Emoji Name</label>
+                    <label htmlFor="name">Name:</label>
                 <input type="text" id="name" value={formData.name} onChange={handleChange} required />
                 <button type="submit">Add</button>
             </form>

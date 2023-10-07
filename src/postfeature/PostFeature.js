@@ -38,10 +38,10 @@ function PostFeature({ onAddEmoji }) {
                 <p>Note: Do not include URL image or text in the emoji input when adding.</p>
                 <div id="inputs-button">
                     <label htmlFor="emoji">Emoji:</label>
-                <input type="text" id="emoji" value={formData.emoji} onChange={handleChange} required />
+                    <input type="text" id="emoji" value={formData.emoji} onChange={handleChange} required />
                     <label htmlFor="name">Name:</label>
-                <input type="text" id="name" value={formData.name} onChange={handleChange} required />
-                <button type="submit">Add</button>
+                    <input type="text" id="name" value={formData.name} onChange={handleChange} required />
+                    <button type="submit">Add</button>
                 </div>
             </form>
         </div>

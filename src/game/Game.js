@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { v4 as uuid } from "uuid"
+import "./game.css"
 
-function Game({ emojis, spinReels, activeEmojis, setIsSpinning, isSpinning }) {
+function Game({ spinReels, activeEmojis, setIsSpinning, isSpinning }) {
     const [reels, setReels] = useState([])
 
-    // console.log("emojis:", emojis)
-    // console.log("emojiArray:", emojiArray)
     useEffect(() => {
         if (isSpinning) {
             const spinInterval = setInterval(() => {
@@ -13,7 +12,6 @@ function Game({ emojis, spinReels, activeEmojis, setIsSpinning, isSpinning }) {
                     const randomIndex = Math.floor(Math.random() * activeEmojis.length)
                     return activeEmojis[randomIndex]
                 })
-                console.log("newReels:", newReels)
                 setReels(newReels)
             }, 50);
 
@@ -29,15 +27,12 @@ function Game({ emojis, spinReels, activeEmojis, setIsSpinning, isSpinning }) {
     }, [isSpinning, reels])
 
     function renderSlot() {
-        console.log("activeEmojis:", activeEmojis)
-        console.log("reels:", reels)
         if (activeEmojis[0] !== undefined && reels.length === 0) {
             return activeEmojis.map((emojiObj) => (
                 <div key={emojiObj.id} className="reel">
                     {emojiObj.emoji}
                 </div>
             ))
-
         }
         else {
             return reels.map((emojiObj) => (
@@ -45,19 +40,20 @@ function Game({ emojis, spinReels, activeEmojis, setIsSpinning, isSpinning }) {
                     {emojiObj.emoji}
                 </div>
             ))
-
         }
     }
 
     return (
-        <div>
-            <h1 id="slot-machine">Slot Machine</h1>
-            <div className="reels">
-                {renderSlot()}
+        <div id="slot-machine-container">
+            <h1 id="title">Slot Machine</h1>
+            <div id="slot-machine">
+                <div className="reels">
+                    {renderSlot()}
+                </div>
+                <button onClick={spinReels} disabled={isSpinning}>
+                    {isSpinning ? "Spinning..." : "Spin"}
+                </button>
             </div>
-            <button onClick={spinReels} disabled={isSpinning}>
-                {isSpinning ? "Spinning..." : "Spin"}
-            </button>
         </div>
     )
 }

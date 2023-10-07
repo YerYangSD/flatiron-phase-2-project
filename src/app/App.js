@@ -21,8 +21,8 @@ function App() {
       })
   }, [])
 
-  function addSixEmojis(newEmojis) {
-    setEmojis([...emojis, newEmojis])
+  function addEmoji(newEmoji) {
+    setEmojis([...emojis, newEmoji])
   }
 
   function getThreeEmojis() {
@@ -45,7 +45,6 @@ function App() {
     setActiveEmojis(getThreeEmojis())
   }, [emojis])
 
-  console.log(emojis)
   return (
     <div className='App'>
       <NavBar />
@@ -59,7 +58,7 @@ function App() {
             setIsSpinning={setIsSpinning} />
         </Route>
         <Route path="/PostFeature">
-          <PostFeature onAddSixEmojis={addSixEmojis} />
+          <PostFeature onAddEmoji={addEmoji} />
         </Route>
         <Route exact path="/">
           <Home />

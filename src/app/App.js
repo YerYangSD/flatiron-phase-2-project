@@ -45,7 +45,6 @@ function App() {
     setActiveEmojis(getThreeEmojis())
   }, [emojis])
 
-  console.log(emojis)
   return (
     <div className='App'>
       <NavBar />

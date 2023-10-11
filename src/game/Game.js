@@ -24,7 +24,7 @@ function Game({ spinReels, activeEmojis, setIsSpinning, isSpinning }) {
                 clearInterval(spinInterval)
             }
         };
-    }, [isSpinning, reels])
+    }, [isSpinning, reels, activeEmojis, setIsSpinning])
 
     function renderSlot() {
         if (activeEmojis[0] !== undefined && reels.length === 0) {

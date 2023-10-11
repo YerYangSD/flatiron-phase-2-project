@@ -42,7 +42,8 @@ function App() {
   };
 
   useEffect(() => {
-    setActiveEmojis(getThreeEmojis())
+    const threeEmojis = getThreeEmojis()
+    setActiveEmojis(threeEmojis)
   }, [emojis])
 
   return (

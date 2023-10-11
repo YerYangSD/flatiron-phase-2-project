@@ -42,7 +42,16 @@ function App() {
   };
 
   useEffect(() => {
-    const threeEmojis = getThreeEmojis()
+    function grabThreeEmojis() {
+      const threeEmojis = []
+      for (let index = 0; index < 3; index++) {
+        const randomIndex = Math.floor(Math.random() * emojis.length)
+        threeEmojis.push(emojis[randomIndex])
+      }
+      return threeEmojis
+    }
+
+    const threeEmojis = grabThreeEmojis()
     setActiveEmojis(threeEmojis)
   }, [emojis])
 

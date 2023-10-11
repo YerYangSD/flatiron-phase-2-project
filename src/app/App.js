@@ -13,7 +13,7 @@ function App() {
   const [isSpinning, setIsSpinning] = useState(false)
 
   useEffect(() => {
-    fetch("http://localhost:4000/emojis")
+    fetch("https://slotmoji.onrender.com/emojis")
       .then(resp => resp.json())
       .then(emojiData => {
 

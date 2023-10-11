@@ -16,7 +16,7 @@ function PostFeature({ onAddEmoji }) {
             },
             body: JSON.stringify(formData)
         }
-        fetch(" http://localhost:4000/emojis", configObj)
+        fetch("https://slotmoji.onrender.com/emojis", configObj)
             .then(resp => resp.json())
             .then(newEmojis => {
                 onAddEmoji(newEmojis)

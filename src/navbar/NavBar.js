@@ -8,7 +8,7 @@ const linkStyles = {
     margin: "6px",
     background: "blue",
     textDecoration: "none",
-    color: "black",
+    color: "white",
     textAlign: "center",
     fontSize: "18px"
 };

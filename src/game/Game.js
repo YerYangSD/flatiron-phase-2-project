@@ -13,7 +13,7 @@ function Game({ spinReels, activeEmojis, setIsSpinning, isSpinning }) {
                     return activeEmojis[randomIndex]
                 })
                 setReels(newReels)
-            }, 50);
+            }, 100);
 
             setTimeout(() => {
                 clearInterval(spinInterval)
